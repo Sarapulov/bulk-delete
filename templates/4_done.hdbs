@@ -1,0 +1,15 @@
+<div class="mainWrapper">
+  <div id="image">
+    <img src="{{assetURL 'done-icon-1.jpg'}}" class="done_image" />
+  </div>
+  <h2 class="done_header">{{t "ui.deleted-records"}} <span style="color: red;">{{total}}</span></h2>
+  <p class="advise">{{t "ui.depending-on-number-of-records"}}</p>
+  <button class="btn go_back" type="button">
+    </i>{{t "ui.delete-something-else"}}</button>
+  <div>
+    <!--
+    <h2>These are tickets</h2>
+    {{tickets}}
+    -->
+  </div>
+</div>

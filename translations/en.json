@@ -1,0 +1,48 @@
+{
+  "app": {
+    "description": "Delete tickets in bulk in just few clicks.",
+    "name": "Bulk delete",
+    "parameters": {
+      "default": {
+        "label": "Enter default search query",
+        "helpText": "Use suggested or enter your default search query."
+      }
+    }
+  },
+  "notifications": {
+    "searchError": "A search query must have at least two characters.",
+    "delete-all": "Delete all records",
+    "being-deleted": "These records are being deleted: ",
+    "you-are-about-to-delete": "You are about to delete all records resulted in your search query. This action cannot be undone. Are you sure you want to delete?",
+    "deleting": "Deleting...",
+    "failed-request": "There was something wrong with this request. Failing reason: "
+  },
+  "ui": {
+    "deleted-records": "The following number of records were just deleted: ",
+    "delete-something-else": "Delete something else",
+    "depending-on-number-of-records":"Depending on number of records it may take some time to complete the actual ticket removal.",
+    "enter-query":"Enter the search query below to extract the data that you want to delete?",
+    "top-20":"Top 20 search results preview",
+    "no-results":"There are no results for this search query",
+    "not-expected_1":"Not expected results? Click ",
+    "not-expected_2":" to learn more about search operators.",
+    "delete-all-tickets":"Delete all tickets",
+    "search":"Search"
+  },
+  "table": {
+      "id": "ID",
+      "subject": "SUBJECT",
+      "status": "STATUS",
+      "created": "CREATED"
+  },
+  "field": {
+    "tickets": "tickets",
+    "users": "users",
+    "oragnizations": "organizations",
+    "group": "group"
+  },
+  "modal": {
+    "delete": "Delete",
+    "cancel": "Cancel"
+  }
+}

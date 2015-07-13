@@ -1,0 +1,22 @@
+{
+  "name" : "Bulk delete",
+  "author" : {
+    "name" : "Andrey Sarapulov",
+    "email" : "asarapulov@zendesk.com",
+    "url" : "https://enablers.zendesk.com"
+  },
+  "defaultLocale" : "en",
+  "singleInstall" : true,
+  "private" : false,
+  "location" : "nav_bar",
+  "version" : "1.0.2",
+  "frameworkVersion" : "1.0",
+  "parameters" : [
+    {
+      "name" : "default",
+      "type" : "text",
+      "required" : false,
+      "default": "created<2015-01-01"
+    }
+  ]
+}

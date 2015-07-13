@@ -1,0 +1,50 @@
+<!-- modal.hdbs -->
+<div class="modal hide fade my_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 class="my_modal_label"></h3>
+  </div>
+  <div class="modal-body">
+    <p></p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn cancel_button" data-dismiss="modal" aria-hidden="true">{{t "modal.cancel"}}</button>
+    <button class="btn btn-primary delete_button" aria-hidden="true">{{t "modal.delete"}}</button>
+  </div>
+</div>
+<div class="mainWrapper">
+  <div class="container-fluid">
+    <h1>{{t "ui.enter-query"}}</h1>
+    <form class="form-inline main_search">
+      <select class="delete_only" name="delete_only" disabled>
+        <option value="ticket">{{t "field.tickets"}}</option>
+        <option value="user">{{t "field.users"}}</option>
+        <option value="organization">{{t "field.oragnization"}}</option>
+        <option value="group">{{t "field.groups"}}</option>
+      </select>
+      <input class="string" type="search" id="input" name="search" autofocus>
+      <button class="search btn btn-primary" id="enter" type="submit">{{t "ui.search"}}</button>
+    </form>
+
+    <div class="loading">{{spinner "dotted"}}</div>
+
+  <div id="results">
+    <h3 class="some_results">{{t "ui.top-20"}}</h3>
+    <h3 class="no_results">{{t "ui.no-results"}}</h3>
+    <p class="advise">{{t "ui.not-expected_1"}} <a href="https://support.zendesk.com/hc/en-us/articles/203663226-Zendesk-search-reference" target="_blank">here</a> {{t "ui.not-expected_2"}}</p>
+    <table>
+      <tbody id="search_results" class="ticket">
+      <tr class="table_header">
+        <th>{{t "table.id"}}</th>
+        <th>{{t "table.subject"}}</th>
+        <th>{{t "table.status"}}</th>
+        <th>{{t "table.created"}}</th>
+      </tr>
+    </tbody>
+    </table>
+    <button class="submit btn btn-primary" id="delete" data-toggle="modal" data-target=".my_modal" data-backdrop="false">{{t "ui.delete-all-tickets"}}</button>
+  </div>
+
+  </div>
+
+</div>
