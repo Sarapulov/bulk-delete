@@ -71,7 +71,7 @@
 
     onSearchDone: function(response) {
       this.search_response = response;
-
+      if ( !response  ) { return; }
       if (response.count === 0) {
 
         this.$('#search_results, .some_results, #delete, .loading')
