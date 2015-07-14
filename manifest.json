@@ -9,7 +9,7 @@
   "singleInstall" : true,
   "private" : false,
   "location" : "nav_bar",
-  "version" : "1.0.2",
+  "version" : "1.0.3",
   "frameworkVersion" : "1.0",
   "parameters" : [
     {
